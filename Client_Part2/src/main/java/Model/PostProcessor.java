@@ -33,7 +33,6 @@ public class PostProcessor implements Runnable {
         this.records = records;
     }
 
-
     @Override
     public void run() {
         ApiClient apiClient = new ApiClient();

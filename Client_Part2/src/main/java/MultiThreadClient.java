@@ -24,8 +24,8 @@ public class MultiThreadClient {
     private static final int totalReq = 200000;
 
     public static void main(String[] args) throws InterruptedException {
-//        urlBase = "http://localhost:8081/Server_war_exploded/";
-        urlBase = "http://hw2-load-balancer-696364178.us-west-2.elb.amazonaws.com/Server_war/";
+        urlBase = "http://54.213.104.90:8080/Server_war/";
+//        urlBase = "http://hw2-load-balancer-696364178.us-west-2.elb.amazonaws.com/Server_war/";
         successReq = new AtomicInteger(0);
         failReq = new AtomicInteger(0);
         events = new LinkedBlockingQueue<>();
